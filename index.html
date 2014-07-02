@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>colorGrab</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+		<link href='style.css' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script type="text/javascript" src="func.js"></script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<div id="uploadWrapper">
+				<h1 id="uploadTitle">
+					enter an image url
+				</h1>
+				<div id="uploadSelect">
+					<input type="text" name="file" placeholder="url       " id="uploadFile">
+				</div>
+				<div id="uploadOptions">
+					<div class="uploadOptionItem">
+						<input type="radio" checked="checked" name="blocks" id="optionsRows" /><label for="optionsRows">split by number of rows and columns</label>
+
+						<select id="optionSelectRows">
+							<option value="1">1 row</option>
+							<option value="2">2 rows</option>
+							<option value="3">3 rows</option>
+							<option value="4">4 rows</option>
+							<option value="5">5 rows</option>
+							<option value="6">6 rows</option>
+							<option value="7">7 rows</option>
+							<option value="8">8 rows</option>
+							<option value="9">9 rows</option>
+							<option value="10" selected="selected">10 rows</option>
+							<option value="11">11 rows</option>
+							<option value="12">12 rows</option>
+							<option value="13">13 rows</option>
+							<option value="14">14 rows</option>
+							<option value="15">15 rows</option>
+							<option value="16">16 rows</option>
+							<option value="17">17 rows</option>
+							<option value="18">18 rows</option>
+							<option value="19">19 rows</option>
+							<option value="20">20 rows</option>
+							<option value="21">21 rows</option>
+							<option value="22">22 rows</option>
+							<option value="23">23 rows</option>
+							<option value="24">24 rows</option>
+							<option value="25">25 rows</option>
+							<option value="26">26 rows</option>
+							<option value="27">27 rows</option>
+							<option value="28">28 rows</option>
+							<option value="29">29 rows</option>
+							<option value="30">30 rows</option>
+							<option value="31">31 rows</option>
+							<option value="32">32 rows</option>
+							<option value="33">33 rows</option>
+							<option value="34">34 rows</option>
+							<option value="35">35 rows</option>
+							<option value="36">36 rows</option>
+							<option value="37">37 rows</option>
+							<option value="38">38 rows</option>
+							<option value="39">39 rows</option>
+							<option value="40">40 rows</option>
+						</select>
+						<select id="optionSelectCols">
+							<option value="1">1 column</option>
+							<option value="2">2 columns</option>
+							<option value="3">3 columns</option>
+							<option value="4">4 columns</option>
+							<option value="5">5 columns</option>
+							<option value="6">6 columns</option>
+							<option value="7">7 columns</option>
+							<option value="8">8 columns</option>
+							<option value="9">9 columns</option>
+							<option value="10" selected="selected">10 columns</option>
+							<option value="11">11 columns</option>
+							<option value="12">12 columns</option>
+							<option value="13">13 columns</option>
+							<option value="14">14 columns</option>
+							<option value="15">15 columns</option>
+							<option value="16">16 columns</option>
+							<option value="17">17 columns</option>
+							<option value="18">18 columns</option>
+							<option value="19">19 columns</option>
+							<option value="20">20 columns</option>
+							<option value="21">21 columns</option>
+							<option value="22">22 columns</option>
+							<option value="23">23 columns</option>
+							<option value="24">24 columns</option>
+							<option value="25">25 columns</option>
+							<option value="26">26 columns</option>
+							<option value="27">27 columns</option>
+							<option value="28">28 columns</option>
+							<option value="29">29 columns</option>
+							<option value="30">30 columns</option>
+							<option value="31">31 columns</option>
+							<option value="32">32 columns</option>
+							<option value="33">33 columns</option>
+							<option value="34">34 columns</option>
+							<option value="35">35 columns</option>
+							<option value="36">36 columns</option>
+							<option value="37">37 columns</option>
+							<option value="38">38 columns</option>
+							<option value="39">39 columns</option>
+							<option value="40">40 columns</option>
+						</select>
+					</div>
+					<div class="uploadOptionItem">
+						<input type="radio" name="blocks" id="optionsBlocks" /><label for="optionsBlocks">split by block size</label>
+						<input type="text" id="optionSelectSize" value="20" maxlength="4" /> px
+					</div>
+				</div>
+				<div id="uploadSubmit">
+					grab it
+				</div>
+			</div>
+			<div id="responseWrapper"></div>
+		</div>
+		<div id="colorHolder"></div>
+	</body>
+</html>
